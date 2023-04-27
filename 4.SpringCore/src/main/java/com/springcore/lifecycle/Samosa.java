@@ -25,6 +25,7 @@ public class Samosa {
 	
 	public void destroy1() {
 		System.out.println("Inside Destroy Method");
+		System.out.println("Java File");
 	}
 	
 	

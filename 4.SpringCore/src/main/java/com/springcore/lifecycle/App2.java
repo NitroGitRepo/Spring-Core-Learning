@@ -11,7 +11,7 @@ public class App2 {
 		
 		AbstractApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/lifecycle/config2.xml");
         Samosa s1 = (Samosa)context.getBean("bean1");
-        
+        System.out.println("Java File");
         System.out.println(s1);
         
         //registering shutdown hook->call destroy method which is given in destroy-method attribute 
