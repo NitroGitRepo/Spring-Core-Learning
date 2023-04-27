@@ -12,6 +12,7 @@ public class App3 {
 		AbstractApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/lifecycle2/config3.xml");
 		Pepsi p = (Pepsi)context.getBean("bean1");
 		System.out.println(p);
+		
 		context.registerShutdownHook();
 		
 
