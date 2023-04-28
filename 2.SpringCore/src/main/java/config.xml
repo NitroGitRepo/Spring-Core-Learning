@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p" 
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+   <bean name="bean1" class="com.springcore.collections.Employees">
+        <property name="name" value="Rajneesh Yadav"/>
+        <property name="phones">
+            <list>
+                 <value>9285144152</value>
+                 <value>7693944152</value>
+                 <value>7566933853</value>
+            </list>
+        </property>
+        <property name="addresses">
+             <set>
+                  <value>Dindori</value>
+                  <value>Jabalpur</value>
+                  <value>Delhi</value>
+             </set>
+        </property>
+        <property name="courses">
+              <map>
+                   <entry key="Java" value="2 Months" />
+                   <entry key="Python" value="3 Months" />
+                   <entry key="Django" value="4 Months"/>
+              </map>
+        </property>
+        <property name="extra">
+            <props>
+                <prop key="Cheess">1St Position</prop>
+                <prop key="Badminton">2nd Position</prop>
+                <prop key="Kabaddi">3rd Position</prop>
+            </props>
+        </property>
+   </bean>
+   
+ 
+ </beans>
