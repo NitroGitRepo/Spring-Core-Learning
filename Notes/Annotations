@@ -1,1 +1,27 @@
-1) @Autowire
+@Autowire
+@Qualifier("bean_name)- It is used with Autowire Annotaion
+
+Example : If we are having two beans of same type(address) 
+And we are using the @Autowired annotation just above the property setter 
+constructor so in this case they should be the case of the ambiguity error so to 
+remove this we have to use @Qualifier annotation and then after that we have to pass the bean name so that 
+it will call that been only 
+    <bean class = "com.springcore.autowire2.Address" name ="add1">
+       <property name="street" value="14"/>
+       <property name="city" value="Dindori Madhya Pradesh"/>
+    </bean>
+    
+    <bean class = "com.springcore.autowire2.Address" name="add2">
+        <property name="street" value="15"/>
+        <property name="city" value="Jabalpur Chattisgarh"/>
+    </bean>
+    
+    public class Employee {
+
+	@Autowired
+	@Qualifier("add2")
+	//here it will inject add2 
+	private Address add;
+    
+    }
+ 
