@@ -1,0 +1,1 @@
+@Autowire - It is the feature of spring framework in which spring container will inject the dependencies automatically.
