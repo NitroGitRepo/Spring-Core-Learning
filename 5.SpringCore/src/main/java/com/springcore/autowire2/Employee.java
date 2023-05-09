@@ -1,10 +1,12 @@
 package com.springcore.autowire2;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Employee {
 
-	//@Autowired
+	@Autowired
+	@Qualifier("add2")
 	private Address add;
 
 	public Address getAdd() {
@@ -16,7 +18,7 @@ public class Employee {
 		this.add = add;
 	}
 
-	@Autowired
+	//@Autowired
 	public Employee(Address add) {
 		super();
 		this.add = add;

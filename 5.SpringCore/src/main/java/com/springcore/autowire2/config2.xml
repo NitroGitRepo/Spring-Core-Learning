@@ -11,10 +11,16 @@
  <context:annotation-config> </context:annotation-config>
  
  
-    <bean class = "com.springcore.autowire2.Address" name ="add">
+    <bean class = "com.springcore.autowire2.Address" name ="add1">
        <property name="street" value="14"/>
        <property name="city" value="Dindori Madhya Pradesh"/>
     </bean>
+    
+    <bean class = "com.springcore.autowire2.Address" name="add2">
+        <property name="street" value="15"/>
+        <property name="city" value="Jabalpur Chattisgarh"/>
+    </bean>
+    
     
     <bean class="com.springcore.autowire2.Employee" name="bean2">
     
