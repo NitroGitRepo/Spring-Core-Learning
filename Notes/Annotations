@@ -24,4 +24,28 @@ it will call that been only
 	private Address add;
     
     }
+ ------
+ Stereotype Annotation
+ @Component -
+ When we will use this annotation just above our class name ,IOC container will create the object of it automatically
+ and default name of bean will be (camel case format of class Name)
+ 
+ @Component("bean_name")-
+ If you want to change the default name of bean then use this .
+ 
+ @value -
+ It is used to pass the value directly instead of passing value through XML file
+ 
+ Example-
+ //@Component
+@Component("stu")
+public class Student {
+
+	@Value("Durgesh Tiwari")
+	private String studentName;
+	
+	@Value("Jabalpur ")
+	private String city;
+}
+
  
