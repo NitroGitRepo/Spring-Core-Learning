@@ -1,5 +1,7 @@
 package com.springcore.componentannotation;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -12,6 +14,20 @@ public class Student {
 	
 	@Value("Jabalpur ")
 	private String city;
+	
+	//pass value of standalone value here
+	@Value("#{pack}")
+	private List<String> addresses;
+	
+   
+	
+	public List<String> getAddresses() {
+		return addresses;
+	}
+
+	public void setAddresses(List<String> addresses) {
+		this.addresses = addresses;
+	}
 
 	public String getStudentName() {
 		return studentName;
@@ -31,7 +47,7 @@ public class Student {
 
 	@Override
 	public String toString() {
-		return "Student [studentName=" + studentName + ", city=" + city + "]";
+		return "Student [studentName=" + studentName + ", city=" + city + ", addresses=" + addresses + "]";
 	}
 	
 	

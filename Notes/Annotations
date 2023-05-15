@@ -36,6 +36,8 @@ it will call that been only
  @value -
  It is used to pass the value directly instead of passing value through XML file
  
+ 
+ 
  Example-
  //@Component
 @Component("stu")
@@ -47,5 +49,29 @@ public class Student {
 	@Value("Jabalpur ")
 	private String city;
 }
+
+❗To pass list of value in variable using @Value annotation
+First create standalone collection in xml using util
+<util:list list-class="java.util.LinkedList" id="pack">
+      <value>Lucknow</value>
+      <value>Delhi</value>
+      <value>Amarkantak</value>
+      <value>Japan</value>
+ </util:list>
+ 
+ then
+ public class Student {
+
+	@Value("Durgesh Tiwari")
+	private String studentName;
+	
+	@Value("Jabalpur ")
+	private String city;
+	
+	//pass value of standalone value here
+	@Value("#{standalone collection Id name}")
+	private List<String> addresses;
+	
+	}
 
  

@@ -12,7 +12,7 @@ public class App4 {
 		
          Student student1 = (Student)context.getBean("stu");
  
-         System.out.println(student1);
+         System.out.println(student1.getAddresses().getClass());
 		
 	}
 
