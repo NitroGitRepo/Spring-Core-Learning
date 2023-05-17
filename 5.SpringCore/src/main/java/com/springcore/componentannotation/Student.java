@@ -3,10 +3,13 @@ package com.springcore.componentannotation;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 //@Component
 @Component("stu")
+//@Scope("singleton")
+@Scope("prototype")
 public class Student {
 
 	@Value("Durgesh Tiwari")
