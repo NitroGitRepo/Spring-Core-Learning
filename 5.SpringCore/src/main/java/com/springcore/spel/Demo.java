@@ -25,6 +25,9 @@ public class Demo {
 	 @Value("#{new java.lang.String('Rajneeesh Yadav')}")
 	 private String name;
 	 
+	 @Value("#{ 8>3}")
+	 private boolean isActive;
+	 
 	 
 	 
 	 
@@ -74,7 +77,8 @@ public class Demo {
 
 	@Override
 	public String toString() {
-		return "Demo [x=" + x + ", y=" + y + ", z=" + z + ", E=" + E + ", name=" + name + "]";
+		return "Demo [x=" + x + ", y=" + y + ", z=" + z + ", E=" + E + ", name=" + name + ", isActive=" + isActive
+				+ "]";
 	}
 	 
 	  

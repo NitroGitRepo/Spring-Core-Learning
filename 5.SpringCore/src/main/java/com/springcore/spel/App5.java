@@ -4,6 +4,7 @@ import java.beans.Expression;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.expression.ExpressionParser;
 import org.springframework.expression.spel.standard.SpelExpressionParser;
 
 public class App5 {
@@ -14,11 +15,12 @@ public class App5 {
      Teacher t = (Teacher)context.getBean("tec");
      
      Demo d = (Demo)context.getBean("demo");
-     System.out.println(d.getY());
+     System.out.println(d);
      
-//     SpelExpressionParser temp = new SpelExpressionParser();
-//     Expression ex = (Expression) temp.parseExpression("22+22");
-//     //System.out.print(ex.getValue());
+//     ExpressionParser parser = new SpelExpressionParser();  
+//     Expression exp = (Expression) parser.parseExpression("'Welcome SPEL'.concat('!')");  
+//     String message = (String) exp.getValue();  
+//     System.out.println(message); 
 	}
 
 }

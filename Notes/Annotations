@@ -78,5 +78,17 @@ First create standalone collection in xml using util
 Singelton -When you need object of a bean IOC container wil create Only one object and when you want another object It's refrence is shared to you.
 Prototype - Everytime new object is created.
 
+----------
+@Configuration - It is used to mark any java file as configuration
+
+@Configuration
+public class myClass{
+
+}
+
+@Bean -  Third Way to declare a bean
+At the rate Read the 3rd option to
+ declare a class as the been so for that we need to create a method inside the Java config file with which will return the object of the class for which we require the bean and after that the method we have to mark with  the @Bean then IOC container will get to know that object of this class should be created.
+
 
  
