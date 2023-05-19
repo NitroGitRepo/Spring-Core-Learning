@@ -73,5 +73,10 @@ First create standalone collection in xml using util
 	private List<String> addresses;
 	
 	}
+	
+@Scope
+Singelton -When you need object of a bean IOC container wil create Only one object and when you want another object It's refrence is shared to you.
+Prototype - Everytime new object is created.
+
 
  
